@@ -1,25 +1,21 @@
-import React from 'react';
-import Header from './Components/Header/Header';
-import { Link } from "react-router-dom";
-
+import React from "react";
+import Header from "./Components/Header/Header";
+import {  Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="app-container">
-      <Header />
-      <div>
-        Test Link
-        <div>
-          <button>
-            <Link to="/users">go to user page</Link>
-          </button>
-          <button>
-            <Link to="/admins">go to admin page</Link>
-          </button>
+      <div className="header-container">
+        <Header />
+      </div>
+      <div className="mai-container">
+        <div className="sidenav-container"></div>
+        <div className="app-container">
+          <Outlet />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default App
+export default App;
