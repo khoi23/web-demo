@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   ProSidebar,
   Menu,
@@ -17,8 +17,9 @@ import {
   FaRegLaughWink,
   FaHeart,
 } from "react-icons/fa";
-import sidebarBg from '../../assets/bg2.jpg'
-
+import { DiReact } from "react-icons/di";
+import { MdDashboard } from "react-icons/md";
+import sidebarBg from "../../assets/bg2.jpg";
 
 const SideBar = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
   return (
@@ -42,27 +43,21 @@ const SideBar = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
               textOverflow: "ellipsis",
               whiteSpace: "nowrap",
             }}>
-            Hoi Dan It
+            <DiReact size={"3rem"} color={"#00bfff"} />
+            <span>Hoi Dan It</span>
           </div>
         </SidebarHeader>
 
         <SidebarContent>
           <Menu iconShape="circle">
-            <MenuItem
-              icon={<FaTachometerAlt />}
-              suffix={<span className="badge red">new</span>}>
-              dashboard
-            </MenuItem>
+            <MenuItem icon={<MdDashboard />}>dashboard</MenuItem>
             <MenuItem icon={<FaGem />}> components</MenuItem>
           </Menu>
           <Menu iconShape="circle">
-            <SubMenu
-              suffix={<span className="badge yellow">3</span>}
-              title={'title'}
-              icon={<FaRegLaughWink />}>
-              <MenuItem> 1</MenuItem>
-              <MenuItem> 2</MenuItem>
-              <MenuItem> 3</MenuItem>
+            <SubMenu title="Features" icon={<FaGem />}>
+              <MenuItem> Quản lý user</MenuItem>
+              <MenuItem> Quản lý bai Quir</MenuItem>
+              <MenuItem> Quản lý câu hỏi</MenuItem>
             </SubMenu>
           </Menu>
         </SidebarContent>
@@ -96,4 +91,4 @@ const SideBar = ({ image, collapsed, rtl, toggled, handleToggleSidebar }) => {
   );
 };
 
-export default SideBar
+export default SideBar;
