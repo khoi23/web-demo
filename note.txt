@@ -1,0 +1,26 @@
+React npm :
+//////////
+1: react-router-dom
+2: sass
+3: axios
+4: react-bootstrap  bootstrap
+5: react-icons
+6: react-pro-sidebar
+7: react-toastify
+
+
+Git 
+////////////////
+1: git init
+2: git add .
+3: git branch 'name branch'
+4: git checkout 'name branch'
+5: git commit -m "name comit"
+6: git push origin "name branch"
+
+
+////// Merge git 
+1: di chuyen ve nhanh can merge 
+    git checkout 'name branch'
+2: merge 
+    git merge 'nhanh merge'
