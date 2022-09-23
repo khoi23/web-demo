@@ -79,6 +79,7 @@ const ModalCreateUser = () => {
               <label className="form-label">Role</label>
               <select
                 className="form-select"
+                value={role}
                 onChange={(e) => {
                   setRole(e.target.value);
                 }}>
